@@ -1,0 +1,69 @@
+html {
+	height: 100%;
+	}
+div {
+    border-top: 1px solid gray;
+    border-bottom: 1 px solid gray;
+} 
+body {
+	height: 90%;
+    margin: 0;
+    padding: 1% 0;
+    background: linear-gradient(to bottom, #06266F, #876ED7, #EE3C7E);
+    font-family: Comic Sans MS, cursive;
+}    
+ h3, h1 {
+	margin: 10px;
+    padding: 10px;
+	width:400px;
+    text-align: center;
+}    
+h3 {
+	background: #007536;
+	border-top:5px solid orange;
+	border-bottom:5px solid #00DEDE;
+	border-left:5px solid #FF4040;
+    border-right:5px solid black;    
+    }
+h1 {
+	background: #FC001D;
+	border-radius: 30% 30% 30% 30%;
+    box-shadow: 10px 10px 20px 20px #BE57F7;  
+    } 
+p {
+	padding: 10px;
+	width:500px;
+    background: #FFC600;
+	border-radius: 30% 30% 30% 30%;
+    box-shadow: 10px 10px 20px 20px #A3F900;
+}  
+p:first-child {
+    margin-top: 0;
+}
+p:last-child {
+    margin-bottom: 0;
+    position: relative;
+} 
+p > :hover {
+    background: #FFFF00;
+    color: white;
+}
+p::before {
+    content: "\2734";
+    margin-right: 16px;
+    color: blue;
+    line-height: 1em;
+}
+ul{
+    margin: 0 0 0 100px;
+    padding: 30px;
+    background: #A967D5;
+    width: 400px;
+    border-radius: 35% 35% 35% 35%;
+    list-style: square outside;
+    list-style-position: outside;
+}
+p:last-child::before {
+    position: relative;
+    background: purple;
+}
