@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Flex</title>
+        
+        <style>
+        body {
+        margin: 0;
+        }
+            .flexparent {
+                background: pink;
+                /*width: 600px;*/
+                height: 600px;
+                display: flex;
+                /*flex-direction: column;*/
+                justify-content: space-around;
+                align-items: stretch;
+            }
+            .flexparent > div {
+                width: 100px;
+                /*height: 100px;*/   
+                flex: none; 
+            }
+            .flexchild1 {
+                background: red;
+                flex: 1 1 100px;
+                <!--flex-grow: 1;
+                flex-srink: 1;
+                flex-basis: 100px;-->
+            }
+            .flexchild2 {
+                background: green;
+                /*flex: 8 3 200px;*/
+                <!--flex-grow: 8;
+                flex-srink: 3;
+                flex-basis: 100px;-->
+            }
+            .flexchild3 {
+                background: blue;
+                /*flex: 1 0 50px;*/
+                <!--flex-grow: 1;
+                flex-srink: 0;
+                flex-basis: 50px;-->
+            }
+            .flexchild4 {
+                background: yellow;
+                /*flex: 0 1 auto;*/
+                <!--flex-grow: 0;
+                flex-srink: 1;
+                flex-basis: 100px;-->
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="flexparent">
+            <div class="flexchild1"></div>
+            <div class="flexchild2"></div>
+            <div class="flexchild3"></div>
+            <div class="flexchild4"></div>
+        </div>
+    </body>

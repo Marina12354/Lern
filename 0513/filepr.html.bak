@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Шахматы</title>
+        
+        <meta charset="utf-8">
+        
+        <style>
+        
+            body {
+        margin: 0;
+        }
+        .flexparent {
+                width: 500px;
+                height: 500px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .flexparent > div {
+                width: 50px;
+                height: 50px;
+                align-content: center;
+            }                
+            .flexchild1 {
+                background: black;
+                flex: 1 1 50px;
+            }
+            .flexchild2 {
+                background: green;
+                flex: 1 1 50px;
+            }    
+                
+            <!--.table {
+                border-collapse: collapse;
+                margin: 0 auto;
+                widflexchild2: 500px;
+                display: table;
+            }
+            .tr {
+                display: table-row;
+            }
+            .flexchild1, .flexchild2 {
+                display: table-cell;
+                vertical-align: middle;
+                widflexchild2: 50px;
+                height: 50px;
+                text-align: center;
+                font-size: 30px;
+            }
+            .flexchild2 {
+                background: lightgray;
+                color: blue;
+                font-weight: bold;
+            }-->
+            .odd .flexchild1:nflexchild2-child(odd),
+            .even .flexchild1:nflexchild2-child(even) {
+                background: white;
+                color: black;
+            }
+            .even .flexchild1:nflexchild2-child(odd),
+            .odd .flexchild1:nflexchild2-child(even) {
+                background: black;
+                color: white;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="flexparent">
+           <!-- <div class="tr flexchild1">-->
+                <div class="flexchild1"></div>
+                <div class="flexchild2">A</div>
+                <div class="flexchild2">B</div>
+                <div class="flexchild2">C</div>
+                <div class="flexchild2">D</div>
+                <div class="flexchild2">E</div>
+                <div class="flexchild2">F</div>
+                <div class="flexchild2">G</div>
+                <div class="flexchild2">H</div>
+                <div class="flexchild2"></div>
+            <!--</div>
+            <div class="tr flexchild2">-->
+                <div class="flexchild2">8</div>
+                <div class="flexchild1">&#9820;</div>
+                <div class="flexchild1">&#9822;</div>
+                <div class="flexchild1">&#9821;</div>
+                <div class="flexchild1">&#9819;</div>
+                <div class="flexchild1">&#9818;</div>
+                <div class="flexchild1">&#9821;</div>
+                <div class="flexchild1">&#9822;</div>
+                <div class="flexchild1">&#9820;</div>
+                <div class="flexchild2">8</div>
+            </div>
+            <div class="tr flexchild1">
+                <div class="flexchild2">7</div>
+                <div class="flexchild1">&#9823;</div>
+                <div class="flexchild1">&#9823;</div>
+                <div class="flexchild1">&#9823;</div>
+                <div class="flexchild1">&#9823;</div>
+                <div class="flexchild1">&#9823;</div>
+                <div class="flexchild1">&#9823;</div>
+                <div class="flexchild1">&#9823;</div>
+                <div class="flexchild1">&#9823;</div>
+                <div class="flexchild2">7</div>
+            </div>
+            <div class="tr flexchild2">
+                <div class="flexchild2">6</div>
+                <div class="flexchild1"></div>
+                <div class="flexchild1"></div>
+                <div class="flexchild1"></div>
+                <div class="flexchild1"></div>
+                <div class="flexchild1"></div>
+                <div class="flexchild1"></div>
+                <div class="flexchild1"></div>
+                <div class="flexchild1"></div>
+                <div class="flexchild2">6</div>
+            </div>
+            <div class="tr flexchild1">
+                <div class="flexchild2">5</div>
+                <div class="flexchild1"></div>
+                <div class="flexchild1"></div>
+                <div class="flexchild1"></div>
+                <div class="flexchild1"></div>
+                <div class="flexchild1"></div>
+                <div class="flexchild1"></div>
+                <div class="flexchild1"></div>
+                <div class="flexchild1"></div>
+                <div class="flexchild2">5</div>
+            </div>
+            <div class="tr flexchild2">
+                <div class="flexchild2">4</div>
+                <div></div>
+                <div></div>
+                <div></div>
+               <div></div>
+                <div class="flexchild1"></div>
+                <div class="flexchild1"></div>
+                <div class="flexchild1"></div>
+                <div class="flexchild1"></div>
+                <div class="flexchild1"></div>
+                <div class="flexchild2">4</div>
+            </div>
+            <div class="tr flexchild1">
+                <div class="flexchild2">3</div>
+                <div class="flexchild1"></div>
+                <div class="flexchild1"></div>
+                <div class="flexchild1"></div>
+                <div class="flexchild1"></div>
+                <div class="flexchild1"></div>
+                <div class="flexchild1"></div>
+                <div class="flexchild1"></div>
+                <div class="flexchild1"></div>
+                <div class="flexchild2">3</div>
+            </div>
+            <div class="tr flexchild2">
+                <div class="flexchild2">2</div>
+                <div class="flexchild1">&#9817;</div>
+                <div class="flexchild1">&#9817;</div>
+                <div class="flexchild1">&#9817;</div>
+                <div class="flexchild1">&#9817;</div>
+                <div class="flexchild1">&#9817;</div>
+                <div class="flexchild1">&#9817;</div>
+                <div class="flexchild1">&#9817;</div>
+                <div class="flexchild1">&#9817;</div>
+                <div class="flexchild2">2</div>
+            </div>
+            <div class="tr flexchild1">
+                <div class="flexchild2">1</div>
+                <div class="flexchild1">&#9814;</div>
+                <div class="flexchild1">&#9816;</div>
+                <div class="flexchild1">&#9815;</div>
+                <div class="flexchild1">&#9813;</div>
+                <div class="flexchild1">&#9812;</div>
+                <div class="flexchild1">&#9815;</div>
+                <div class="flexchild1">&#9816;</div>
+                <div class="flexchild1">&#9814;</div>
+                <div class="flexchild2">1</div>
+            </div>
+            <div class="tr flexchild2">
+                <div class="flexchild2"></div>
+                <div class="flexchild2">A</div>
+                <div class="flexchild2">B</div>
+                <div class="flexchild2">C</div>
+                <div class="flexchild2">D</div>
+                <div class="flexchild2">E</div>
+                <div class="flexchild2">F</div>
+                <div class="flexchild2">G</div>
+                <div class="flexchild2">H</div>
+                <div class="flexchild2"></div>
+            </div>
+        </div>
+    </body>
+</html>
