@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Адаптивность</title>
+        
+        <!--<link href="0517.css" rel="stylesheet">-->
+        
+        <style>
+            body {
+                margin: 0;
+            }
+           <!-- div {
+                background: #8C6DD7;
+                width: 500px;
+                height: 500px;
+                border: 3px solid #EFFD3F;
+            }-->
+            .container {
+                background: #8C6DD7;
+                <!--width: 500px;-->
+                height: 1000px;
+                border: 3px solid #EFFD3F;
+                margin: 0 auto;
+                width: 1400px;
+                display: flex;
+                justify-content: space-evenly;
+                gap: 20px;
+            }
+            .init {
+                height: 100px;
+                width: 100px;
+                background: #280671;
+                flex: none;
+                
+            }
+            @media screen and (max-width:1420px;) {
+                .container {
+                    width: 1200px;
+                }
+            }
+            @media screen and (max-width:1220px;){
+                .container {
+                    width: 1000px;
+                    flex-wrap: wrap;
+                }
+            }
+            @media screen and (max-width:1020px;){
+                .container {
+                    width: auto;
+                    margin: 0 10px;
+                }
+            }
+           @media screen and (max-width:640px;){
+                .container {
+                    display: block;
+                    overflow-y: auto;
+                }
+            
+           .init {
+                margin: 100px auto;
+           }
+           }
+            
+        </style>
+        
+    </head>
+    
+        <body>
+            <div class="container">
+                <div class="init"></div>
+                <div class="init"></div>
+                <div class="init"></div>
+                <div class="init"></div>
+                <div class="init"></div>
+                <div class="init"></div>
+                <div class="init"></div>
+                <div class="init"></div>
+                <div class="init"></div>
+                <div class="init"></div>
+            </div>
+        
+        
+        
+        </body>
+</html>    

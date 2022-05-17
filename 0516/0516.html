@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Трансформации</title>
+        
+        <meta charset="utf-8">
+        
+        <style>
+            div {
+                height: 200px;
+                width: 200px;
+                margin:100px;
+            }
+            .transformed {
+                background: #33CCCC;
+                transition: all 1.5s;    
+                position: relative;
+                backface-visibility: none;                
+                /*transform: rotate(120deg);
+                transform-origin: 150% 130%;*/
+                /*transform: scale(-1.5, .2);*/
+                /*transform: skew(45deg, -45deg);*/
+                /*transform: translate(100%, 50%);*/
+                /*transform: perspective(1000px) rotateX(45deg);*/
+            }
+            .transformed:hover {
+                transform: rotate(360deg);
+            }
+            .transformed span {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                transform: rotateY(180deg);
+                backface-visibility: hidden;
+            }
+            .standart{
+                background: #39E639;
+            }
+        
+        
+        </style>
+    </head>
+
+    <body>
+        <div class="transformed">Content</div>
+        <div class="standart">Content</div>
+</html>    

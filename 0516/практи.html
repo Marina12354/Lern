@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Тран</title>
+        
+        <meta charset="utf-8">
+        
+        <style>
+            body{
+            margin:0;
+            }
+            input {
+                margin: 100px auto;
+                display: block;
+            }
+            .tab {
+                display: flex;
+                justify-content: space-evenly;
+                margin: 100px auto;
+            }
+            
+            .a, .b, .c {
+                height: 100px;
+                width: 100px;
+                border: 1px solid red;
+                transition: all .5s;
+            }
+           .anim {
+                background: url('/Users/Marina/Lern/img/zver.png') center center repeat;
+                height: 250px;
+                width: 250px;
+                margin: 100px auto;        
+           }
+                    
+            input[type="checkbox"]:checked ~ .tab .a {
+                transform: rotate(45deg);
+            }
+            input[type="checkbox"]:checked ~ .tab .b {
+                transform: scale(-1.5);
+            }
+            input[type="checkbox"]:checked ~ .tab .c {
+                transform: skew(20deg, -30deg);
+            }
+            input[type="checkbox"]:checked ~ .anim {
+                animation: zver 2s infinite linear;
+                position: relative;
+            }
+            @keyframes zver {
+                0% {
+                    transform: translateX(0);
+                }
+                25% {
+                    transform: translateX(-200%);
+                }
+                50% {
+                    transform: translateX(0);
+                }
+                75% {
+                    transform: translateX(200%);
+                }
+                100% {
+                    transform: translateX(0);}
+                }
+        
+        </style>
+    </head>
+    
+    
+    <body>
+        <input type="checkbox">
+        <div class="tab">
+            <div class="a">1</div>
+            <div class="b">2</div>
+            <div class="c">3</div>
+        </div>
+        <div class="anim"></div>
+    
+    </body>
+</html>    

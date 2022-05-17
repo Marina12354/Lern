@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Стилизация нестилизуемого</title>
+        
+        <!--<link href="0517.css" rel="stylesheet">-->
+        
+        <style>
+            label {
+                display: block;
+                width: 100px;
+                height: 50px;
+                background: #8C6DD7;
+            }
+            :checked + label {
+                background: #EFFD3F;
+            }
+        
+        </style>
+        
+    </head>
+    
+        <body>
+            <input type="checkbox" id="box">
+            <label for="box"></label>
+        </body>
+</html>    

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Стилизация нестилизуемого</title>
+        
+        <!--<link href="0517.css" rel="stylesheet">-->
+        
+        <style>
+            input[type="checkbox"] {
+                display: none;
+            }
+            label {
+                display: block;
+                width: 100px;
+                height: 100px;
+                margin: 100px;
+                background: #8C6DD7;
+            }
+            input[type="checkbox"] {
+                :checked + label {
+                background: #EFFD3F;
+            }
+            #text {
+                display: block;
+                padding: 10px;
+                border: 2px solid red;
+                width: 200px;
+                height: 30px;
+                font: bold 20px Arial;
+            }
+            #text::placeholder {
+                color: #280671;
+                font: italic 20px Arial;
+            }
+        </style>
+        
+    </head>
+    
+        <body>
+            <input type="checkbox" id="box">
+            <label for="box"></label>
+            <input type="text" id="text" placeholder="Text here">
+        </body>
+</html>    
