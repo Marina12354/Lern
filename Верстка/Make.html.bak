@@ -33,64 +33,42 @@
     <main>
     <div class="container_too">
         <section class="we_do">
-            <h3>What we do to help our client grow in digital era</h3>
+            <p class="we">What we do to help our client grow in digital era</p>
                 <div class="group_main">
                    <div class="group">
                         <img class="first" src="../img/1.png" alt="first">
                         <p class="group_tek">Make Your business To Be Better Famous In Internet</p>
                         <p class="group_mel">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a class="arrey" href="#">Lern more</a>
                     </div>
                 <div class="group">
                     <img class="second" src="../img/2.png" alt="second">
                     <p class="group_tek">Bring --- To Your Comfrotable Home</p>
                     <p class="group_mel">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a class="arrey" href="#">Lern more</a>
                 </div>
                     <div class="group">
                      <img class="third" src="../img/3.png" alt="third">
                         <p class="group_tek">Build Your Digital Product That Suitable For Your Need</p>
                         <p class="group_mel">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a class="arrey" href="#">Lern more</a>
                     </div>
             </div>      
         </section>
     </div> 
-     <!--    <main>
-            <div class="container">
-                <section class="main_one">
-                    <p class="main_p_one">What we do to help our client grow in digital era</p>
-                    <div class="main_blocks_first">
-                        <div class="block">
-                            <img class="main_three_blocks_img" src="./svg/1.svg" alt="first">
-                            <p class="main_three_blocks_p_one">Make Your business To Be <br>Better Famous In Internet</p>
-                            <p class="main_three_blocks_p_two">Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit, sed <br>do eiusmod tempor incididunt ut <br>labore et dolore magna aliqua. </p>
-                            <a class="main_link" href="#">Learn more</a>
-                        </div>
-                        <div class="block">
-                            <img class="main_three_blocks_img" src="./svg/2.svg" alt="first">
-                            <p class="main_three_blocks_p_one">Bring --- To Your <br>Comfrotable Home</p>
-                            <p class="main_three_blocks_p_two">Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit, sed <br>do eiusmod tempor incididunt ut <br>labore et dolore magna aliqua. </p>
-                            <a class="main_link" href="#">Learn more</a>
-                        </div>
-                        <div class="block">
-                            <img class="main_three_blocks_img" src="./svg/3.svg" alt="first">
-                            <p class="main_three_blocks_p_one">Build Your Digital Product <br>That Suitable For Your Need</p>
-                            <p class="main_three_blocks_p_two">Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit, sed <br>do eiusmod tempor incididunt ut <br>labore et dolore magna aliqua. </p>
-                            <a class="main_link" href="#">Learn more</a>
-                        </div>                        
-                    </div>  
-                </section>-->
-        
-        <!--<section>
-            <h3>Our Finished Project</h3>
-                <div class="container_too">   
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                        <a href="#" class="home"></a>
-                            <p>Smart Home Installation</p>
-                        <a href="#" class="phone"></a>
-                            <p>Sparklite App</p>
-                        <a href="#" class="car"></a>
-                            <p>Car-Rapetition App</p>
-                </div>
-        </section>-->
+                 <section>
+                <p class="we">Our Finished Project</p>
+                <p class="our">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    <div class="container_our">   
+                       <div class="home"> <img class="home" src="../img/home.png" alt="home"> 
+                            <p class="mask">Smart Home Installation</p> </div>
+                        <div class="phone_one"><img class="phone" src="../img/phone.png" alt="phone">
+                            <p class="mask1">Sparklite App</p></div>
+                        <div class="car"> <img class="car" src="../img/car.png" alt="car">
+                            <p class="mask2">Car-Rapetition App</p></div>
+                    </div>
+                </section>
+    
                 
             </main>
     

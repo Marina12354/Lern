@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<title>Data</title>
+<meta charset="utf-8">
+    <script>
+        
+    let a = new Date();   
+        
+    let b = new Date(1917, 9, 25);
+
+  //  alert(['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'][b.getDay()]);
+
+    let c = russianDate("25 октября 1917 года");
+    
+    alert(c);
+    
+    function russianDate(data_string) {
+        let [day, month, year] = data_string.split(' ');
+        month = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'декабря'].indexOf(month);
+        
+        return new Date(year, month, day);
+    }
+    
+    
+    </script>
+               
+</head>
+<body></body>
+</html>

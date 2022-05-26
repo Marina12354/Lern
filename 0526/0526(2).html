@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+    <title>Svetofor</title>
+    <meta charset="utf-8">
+        <script>
+                    
+            let svetofor = {
+                colors: [
+                    'Красный цвет',
+                    'Желтый цвет',
+                    'Зеленый цвет'
+                ],
+                pointer: 0,
+                changeColor() {
+                    this.pointer = (this.pointer + 1) % 3; // 3 % 3 = 0!
+                },
+                getColor() {
+                    return this.colors[this.pointer];
+                }
+            };
+            
+            function use(){
+                svetofor.changeColor();
+            }
+             setInterval(use, 2000);
+          //  setInterval(svetofor.changeColor, 1000);
+            
+          /*  setInterval(function() {
+                svetofor.changeColor();
+                //console.log(svetofor.changeColor());
+                }, 1000); */
+                    
+        </script>
+               
+    </head>
+<body></body>
+</html>

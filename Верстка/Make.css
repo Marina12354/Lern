@@ -46,14 +46,6 @@ body {
     max-width: 1140px;
     margin: 0 auto;
 }
-h3 {
-    font-weight: 300;
-    font-size: 36px;
-    line-height: 46px;
-    text-align: center;
-   /* width: 1137px;
-    height: 41px;*/
-}
 /* header */
 
 header {
@@ -182,8 +174,58 @@ nav {
     content: url('../img/arrey.png');
     float: right;
     margin-right: 207px;
+    
 }
-
+.we {
+    margin-left:40px;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center;
+}
+.container_our {
+    display: grid;
+    gap: 16px;
+    grid-column: row;
+    justify-content: center;
+    grid-template-areas: "A A"
+                         "B C";
+}
+.home {
+    grid-area: A;
+    grid-column: -1 / 1;
+}
+.phone_one {
+    grid-area: B;
+    grid-column: 1 / 2;
+}
+.car {
+    grid-area: C;
+    grid-column: 2 / 2;
+}
+.our {
+    width: 750px;
+    text-align: center;
+    color: #222222;
+    margin: 32px;
+}
+.mask {
+    font-size: 32px;
+    line-height: 46px;
+    color: #fff;
+}
+.mask1 {
+    font-size: 28px;
+    line-height: 46px;
+    color: #fff;
+    text-align: right;
+}
+.mask2 {
+    font-size: 28px;
+    line-height: 46px;
+    color: #fff;
+    text-align: left;
+}
 /* footer */
 footer {
     flex: none;
