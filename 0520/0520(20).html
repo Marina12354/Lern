@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+    <title>Игра "Угадай число"</title>
+        <script>
+            let num = Math.floor(Math.random() * 100 + 1);
+            
+            while (true) {
+                
+                let usernum =  parseInt(prompt('Введите число:'));
+                  if (isNaN(usernum)) {
+                        alert('Я просил ввести число!');
+                        continue;
+                    }
+                    if (num == usernum) {
+                        break;
+                    } else if (num < usernum) {
+                        alert('Надо меньше');
+                    } else {
+                        alert('Надо больше');
+                    }
+                 }
+                 alert('Вы угадали!') 
+              
+        </script>
+</head>
+<body></body>
+</html>

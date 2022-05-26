@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title></title>
+            <meta charset="utf-8">
+                <script>
+                
+            function Worker(name, post, salary) {
+                this.name = name;
+                this.post = post;
+                this.maxsalary = salary;
+            }   
+            function checkSalary(worker) {
+                if (worker.salary > 0) {
+                    console.log(worker.name + 'works.');
+                } else {
+                    console.log(worker.name + 'fired.');
+                }
+            }
+            let tokar = {
+                name: 'Vasa',
+                post: 'tokar',
+                salary: 150
+            }    
+            let pekar = new Worker('Pete', 'pekar', 100);
+            
+            let lodyr = {}
+            lodyr.name = 'Sena';
+            lodyr.post = 'lodyr';
+            lodyr.salary = 0;
+            
+            checkSalary(tokar);
+            checkSalary(pekar);
+            checkSalary(lodyr);
+          
+            /*if (this.age < 16) {
+                                this.status = 'Too young';
+                            } else if (this.age > 91) {
+                                this.status = 'Too old';
+                            } else {
+                                this.status = 'correct';
+                            }
+                        },
+            this.brake = function(minus) {
+                this.speed -= minus;
+                if (this.speed <= 0) {
+                    this.speed = 0;
+                    console.log('Мы остановились!');
+            }
+            console.log('Скорость' + this.name + 'стала' +this.speed);
+        };
+        }*/
+        
+                
+                
+                
+                /*    let User = {
+                        getUserInfo(){
+                            this.name = prompt('Ваше имя?');
+                            this.age = +prompt('Ваш возраст?');
+                        },
+                        setStatus(){
+                            if (this.age < 16) {
+                                this.status = 'Too young';
+                            } else if (this.age > 91) {
+                                this.status = 'Too old';
+                            } else {
+                                this.status = 'correct';
+                            }
+                        },
+                        toString(){
+                            return `object User named ${this.name} is ${this.status}`;
+                        }
+                    }
+                   User.getUserInfo();
+                   User.setStatus();
+                   document.write(User);*/
+                   
+                 /* function User() {
+                this.getUserInfo = function() {
+                this.name = prompt('Ваше имя?');
+                this.age = +prompt('Ваш возраст?');
+            };
+            this.setStatus = function() {
+                if (this.age < 16) {
+                    this.status = 'too young';
+                } else if (this.age > 91) {
+                    this.status = 'too old';
+                } else {
+                    this.status = 'correct';
+                }
+            };
+            this.toString = function() {
+                return `object User named ${this.name} is ${this.status}`;
+            }
+        }
+        user = new User;
+        user.getUserInfo();
+        user.setStatus();
+        document.write(user);*/
+                   
+        </script>
+    </head>
+    <body></body>
+</html>

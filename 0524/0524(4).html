@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+    <title>Objects</title>
+    <meta charset="utf-8">
+        <script>
+        
+        function Car(name, speed) {
+            this.name = name;
+            this.maxspeed = speed;
+            this.speed = 0;
+            this.start = function() {
+                console.log(this.name + 'поехал');
+                this.speed = 10;
+            }
+            this.accelerate = function(plus) {
+                this.speed += plus;
+                if (this.speed < this.maxspeed) {
+                    this.speed = this.maxspeed;
+                    console.log('Скорость максимальная!');
+                }
+                console.log('Скорость' + this.name + 'стала' +this.speed);
+            };
+            this.brake = function(minus) {
+                this.speed -= minus;
+                if (this.speed <= 0) {
+                    this.speed = 0;
+                    console.log('Мы остановились!');
+            }
+            console.log('Скорость' + this.name + 'стала' +this.speed);
+        };
+        }
+        
+        </script>
+    </head>
+</html>          

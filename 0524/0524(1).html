@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+    <title>Objects</title>
+    <meta charset="utf-8">
+        <script>
+        
+            let obj = {
+                getName: function() {
+                    this.name = prompt('Как ваше имя?');
+                },
+                greet: function() {
+                    alert('Здравствуйте,' + this.name);
+                }
+            }
+            obj.getName();
+            obj.greet();
+        
+        </script>
+    </head>
+</html>  

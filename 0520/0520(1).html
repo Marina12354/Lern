@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+    <title>Игра в загадки</title>
+        <script>
+            let question = 'Зимой и летом одним цветом';
+            let answer = 'елка';
+            
+            let useranswer = prompt(question);
+            if (useranswer.toLowerCase().replace('ё', 'е') == answer) {
+                alert('Вы угадали!');
+            } else {
+                alert('Вы не угадали!');
+            }
+        </script>
+</head>
+</html>        

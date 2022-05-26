@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+    <title>Objects</title>
+    <meta charset="utf-8">
+        <script>
+        
+       /* let a = {
+            name: 'A',
+            method() {
+                console.log('Called by ' + this.name);
+            }
+        }
+        let b = {
+            name: 'B',
+            method: a.method
+            }
+        let c = a.method;
+        a.method();    
+        b.method();    
+        c();*/
+        
+        function Car(name) {
+            this.name = name;
+            this.price = 10000000;
+            this.alert = function() {
+                alert(this.name);
+            };
+        }
+        /* return {
+            name: name,
+            price: ...
+        }*/
+        let car = new Car('BMW');
+        console.log(car);
+        
+        </script>
+    </head>
+</html>         
